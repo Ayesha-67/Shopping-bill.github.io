@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title> BILL </title>
+        <script type = "text/javascript" src = "Event-Handler.js" ></script>
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <meta charset = "utf-8" />
+    </head>
+    <body>
+    
+    <center>
+    <div class="container">
+    <br>
+        <img src="https://i.pinimg.com/originals/35/e0/93/35e093f810f0a8e4c01357194722e3d0.png" alt="logo" height="50" width="50">
+        <p>
+            <h3> ILLUSION MART </h3>
+            <h5>Besides MG Stadium <br>Tumkur, Karnataka - 572101 <br>Customer Care : 1234567890</h5>
+        </p>
+        <hr style="border-top: 1px dotted">
+        <form name = "orderForm" >
+            <table >
+                <tr>
+                    <th>Sl.No</th>
+                    <th>Item</th>
+                    <th>Net Price</th>
+                    <th>Qty</th>
+                    <th>value</th>
+                </tr>   
+                <tr>
+                    <td>1</td>
+                    <td> Apples</td>
+                    <td class="net">0.59</td>
+                    <td><input type = "text" name = "apples" size = "6" class="net" onChange="appleHandler()"/></td>
+                    <td><input type = "text" size = "3" style="border:none" class="net"  id="a"/></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> Oranges</td>
+                    <td class="net">0.49</td>
+                    <td><input type = "text" name = "oranges" size = "6"  class="net" onChange = "orangeHandler()" /></td>
+                    <td><input type = "text" size = "3" style="border:none" class="net"  id="o"/></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td> Bananas</td>
+                    <td class="net">0.39</td>
+                    <td><input type = "text" name = "bananas" size = "6" class="net" onChange = "bananaHandler()" /></td>
+                    <td><input type = "text" style="border:none" size = "3" class="net"  id="b"/></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td>+50 GST</td>
+                </tr>
+            </table>
+            <hr style="border-top: 1px dotted">
+            <table>
+                <tr>
+                    <th>Total</th>
+                    <td><pre>                           </pre></td>
+                    <td style>&#x20b9;<input type="text" style="border:none" name="Total" id="total" size="4"/></td>
+                </tr>
+            </table>
+            
+            <input type = "reset" name = "reset" value="RESET"/>
+            <input type = "button" value = "SUBMIT" onclick="finish()"  />
+            <hr style="border-top: 1px dotted">
+        </form>
+        
+        <img src="https://th.bing.com/th/id/OIP.g9M3UoYXYkHW2RPr6LQ4egHaDc?w=337&h=162&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="bar code" width="150" height="50">
+        <div class="thanks">
+            Thank you for Shopping with us :)
+        </div>
+    </div>
+    </center>
+    
+    </body>
+</html>
